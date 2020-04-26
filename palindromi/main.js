@@ -15,9 +15,9 @@ var parolaContrario = parolaDivisa.reverse()
 var parolaPalindromo = parolaDivisa.join('')
 // A questo punto ci basta mettere al confronto le due parole per verificare se esse sono uguali
 if (parolaMaiuscola == parolaPalindromo) {
-    return console.log('La parola ' + parola + ' è una parola palindroma');
+    return alert('La parola ' + parola + ' è una parola palindroma');
 } else {
-    return console.log('La parola ' + parola + ' non è una parola palindroma');
+    return alert('La parola ' + parola + ' non è una parola palindroma');
 }
 
 }
