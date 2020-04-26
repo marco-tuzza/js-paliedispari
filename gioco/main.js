@@ -5,7 +5,7 @@ var numeroUtente = parseInt(prompt('Inserisci un numero da 1 a 5'))
     // Assicuriamoci che inserisca un carattere numerico compreso tra 1 e 5
     if (isNaN(numeroUtente) || numeroUtente > 5 || numeroUtente < 1) {
         var pari = undefined
-        console.log('Si prega di inserire solo caratteri numerici e numeri compresi tra 1 e 5');
+        alert('Si prega di inserire solo caratteri numerici e numeri compresi tra 1 e 5');
     } else {
         console.log('Hai scelto : ' + numeroUtente);
     }
@@ -20,7 +20,7 @@ var sceltaUtente = sceltaUtente.toUpperCase();
     } else if (sceltaUtente == 'D') {
         console.log('Hai scelto Dispari');
     } else {
-        console.log('Si prega di inserire "P" per scegliere pari o "D" per scegliere dispari');
+        alert('Si prega di inserire "P" per scegliere pari o "D" per scegliere dispari');
     }
 
 
@@ -35,13 +35,13 @@ console.log('La somma dei due numeri è ' + sommaRisultati);
 // Creiamo delle condizioni di vittoria e sconfitta che tengano in considerazione le scelte prese in precedenza dall'utente e l'esito della divisione per due della somma dei numeri scelti da utente e computer.
 // Creiamo anche un messaggio di errore nel caso in cui l'utente abbia sbagliato qualcosa durante il processo di compilazione del gioco
     if (sceltaUtente == 'P' && sommaRisultati % 2 == 0) {
-        console.log('Hai vinto!');
+        alert('Hai vinto!');
     } else if (sceltaUtente == 'P' && sommaRisultati % 2 == 1) {
-        console.log('Hai perso!');
+        alert('Hai perso!');
     } else if (sceltaUtente == 'D' && sommaRisultati % 2 == 0) {
-        console.log('Hai perso!');
+        alert('Hai perso!');
     } else if (sceltaUtente == 'D' && sommaRisultati % 2 == 1) {
-        console.log('Hai vinto!');
+        alert('Hai vinto!');
     } else {
-        console.log('Qualcosa è andato storto, riprova');
+        alert('Qualcosa è andato storto, riprova');
     }
