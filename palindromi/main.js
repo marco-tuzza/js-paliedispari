@@ -2,8 +2,9 @@
 
 // Chiediamo all'utente di fornirci una parola
 var parolaUtente = palindromo(prompt('Scegli una parola'))
-// Per evitare confusione tra lettere maiuscole e minuscole, che potrebbero compromettere il risultato finale, facciamo in modo che la parola scelta dall'utente venga trasformata in testo maiuscolo
+
 function palindromo(parola) {
+// Per evitare confusione tra lettere maiuscole e minuscole, che potrebbero compromettere il risultato finale, facciamo in modo che la parola scelta dall'utente venga trasformata in testo maiuscolo
 var parolaMaiuscola = parola.toUpperCase();
 // Dobbiamo verificare se la parola è palindroma, per farlo dobbiamo prenderla, leggerla al contrario e vedere se è rimasta invariata.
 // Per facilitare il processo, prendiamo la parola e la scomponiamo, lettera per lettera
