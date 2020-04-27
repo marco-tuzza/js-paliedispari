@@ -4,7 +4,6 @@
 var numeroUtente = parseInt(prompt('Inserisci un numero da 1 a 5'))
     // Assicuriamoci che inserisca un carattere numerico compreso tra 1 e 5
     if (isNaN(numeroUtente) || numeroUtente > 5 || numeroUtente < 1) {
-        var pari = undefined
         alert('Si prega di inserire solo caratteri numerici e numeri compresi tra 1 e 5');
     } else {
         console.log('Hai scelto : ' + numeroUtente);
